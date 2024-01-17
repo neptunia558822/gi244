@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     private void MoveByKB()
     {
         xInput = Input.GetAxis("Horizontal");
-        zInput = Input.GetAxis("vertical");
+        zInput = Input.GetAxis("Vertical");
 
         Vector3 dir = (transform.forward * zInput) + (transform.right * xInput);
 
