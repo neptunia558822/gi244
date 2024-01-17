@@ -9,6 +9,9 @@ public class CameraController : MonoBehaviour
     [Header("Move")]
     [SerializeField] private float moveSpeed;
 
+    [SerializeField] private Transform corner1;
+    [SerializeField] private Transform corner2;
+
     [SerializeField] private float xInput;
     [SerializeField] private float zInput;
 
@@ -22,8 +25,19 @@ public class CameraController : MonoBehaviour
         Vector3 dir = (transform.forward * zInput) + (transform.right * xInput);
 
         transform.position += dir * moveSpeed * Time.deltaTime;
+        transform.position = Clamp(corner1.position, corner2.position);
     }
 
+    private Vector3 Clamp(Vector3 lowerLeft, Vector3 topRight)
+    {
+        Vector3 pos = new Vector3(Mathf.Clamp(transform.position.x,
+            lowerLeft.x, topRight.x),
+                                            transform.position.y,
+                                            Mathf.Clamp(transform.position.z,
+            lowerLeft.z, topRight.z));
+
+        return pos;
+    }
     // Start is called before the first frame update
     void Awake()
     {
