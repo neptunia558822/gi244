@@ -5140,6 +5140,7 @@ GameObject:
   - component: {fileID: 4996735773749887508}
   - component: {fileID: 4198996456818881120}
   - component: {fileID: -7423028977170167880}
+  - component: {fileID: -3349633824117826291}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Untagged
@@ -5254,6 +5255,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fafe1732e7860d4ba4fb3408389111c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  unitName: 
+  unitPic: {fileID: 0}
+  curHP: 0
+  maxHP: 100
+  moveSpeed: 5
+  minWpnDamage: 0
+  maxWpnDamage: 0
+  armour: 0
+  visualRange: 0
+  weaponRange: 0
+  state: 0
+  faction: {fileID: 0}
+  selectionVisual: {fileID: 0}
+--- !u!114 &-3349633824117826291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54ace80c810db64c93551b526a6ad8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &186630

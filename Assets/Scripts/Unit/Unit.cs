@@ -43,6 +43,20 @@ public class Unit : MonoBehaviour
     [SerializeField] private float visualRange;
     public float VisualRange { get {  return visualRange; } }
 
+    [SerializeField] private float weaponRange;
+    public float WeaponRange { get { return weaponRange; } }
+
+    [SerializeField] private UnitState state;
+    public UnitState State { get { return state; } set { state = value; } }
+
+    private NavMeshAgent navAgent;
+    public NavMeshAgent NavAgent { get { return navAgent; } }
+
+    [SerializeField] private Faction faction;
+
+    [SerializeField] private GameObject selectionVisual;
+    public GameObject SelectionVisual { get { return selectionVisual; } }
+
        void Start()
     {
         
@@ -52,5 +66,10 @@ public class Unit : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void Awake()
+    {
+        navAgent = GetComponent<NavMeshAgent>();
     }
 }
