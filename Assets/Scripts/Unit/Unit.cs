@@ -57,6 +57,12 @@ public class Unit : MonoBehaviour
     [SerializeField] private GameObject selectionVisual;
     public GameObject SelectionVisual { get { return selectionVisual; } }
 
+    public void ToggleSelectionVisual(bool flag)
+    {
+        if (selectionVisual != null)
+            selectionVisual.SetActive(flag);
+    }
+
        void Start()
     {
         
