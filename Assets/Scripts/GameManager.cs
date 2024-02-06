@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Faction[] factions;
 
     public static GameManager instance;
+
     void Awake()
     {
         instance = this;
