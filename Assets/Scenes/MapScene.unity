@@ -2105,6 +2105,14 @@ PrefabInstance:
       propertyPath: faction
       value: 
       objectReference: {fileID: 1456999633}
+    - target: {fileID: 329985037256525795, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
+      propertyPath: unitPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 329985037256525795, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
+      propertyPath: unitPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 192002, guid: 536563a9c50594847b2036d8dac8101e, type: 3}
     - target: {fileID: 1011606855042232189, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
       propertyPath: m_Name
       value: Headquarter

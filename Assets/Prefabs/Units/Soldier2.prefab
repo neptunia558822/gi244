@@ -5792,7 +5792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fafe1732e7860d4ba4fb3408389111c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1
   unitName: 
   unitPic: {fileID: 0}
   curHP: 0
@@ -5806,6 +5806,12 @@ MonoBehaviour:
   state: 0
   faction: {fileID: 0}
   selectionVisual: {fileID: 0}
+  unitCost:
+    food: 50
+    wood: 10
+    gold: 20
+    stone: 0
+  unitWaitTime: 0.1
 --- !u!114 &812028655485200947
 MonoBehaviour:
   m_ObjectHideFlags: 0
