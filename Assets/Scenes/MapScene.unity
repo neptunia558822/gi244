@@ -1602,6 +1602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House
       objectReference: {fileID: 0}
+    - target: {fileID: 9221436638999843983, guid: e768e574519a6774086224d0f8e4fba1, type: 3}
+      propertyPath: isFunctional
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
