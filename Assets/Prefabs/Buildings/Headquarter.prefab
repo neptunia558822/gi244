@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1042aed466f32e84db5806e7a1b67470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  structureName: 
+  structureName: Headquarter
   structurePic: {fileID: 0}
   curHP: 100
   maxHP: 100
