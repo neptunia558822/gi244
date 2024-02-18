@@ -30,7 +30,7 @@ public class ActionManager : MonoBehaviour
 
     private void ShowCreateUnitButtons(Building b)
     {
-        if (b.isisFunctional)
+        if (b.IsFunctional)
         {
             for (int i = 0; i < b.UnitPrefabs.Length; i++)
             {
@@ -86,6 +86,10 @@ public class ActionManager : MonoBehaviour
     public void CreateBuildingButton(int n)//Map with Create Building Btns
     {
         //Debug.Log("1 - Click Button: " + n);
+        Unit unit = UnitSelect.instance.CurUnit;
+
+        if (unit.IsBuilder)
+            unit.Builder.ToCreateNewBuilding(n);
     }
 
     public static ActionManager instance;
