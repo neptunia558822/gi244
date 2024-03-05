@@ -54,6 +54,9 @@ public class UnitSelect : MonoBehaviour
                 case "Building":
                     BuildingSelect(hit); 
                     break;
+                case "Resource":
+                    ResourceSelect(hit); 
+                    break;
             }
         }
     }
@@ -64,6 +67,8 @@ public class UnitSelect : MonoBehaviour
             curUnit.ToggleSelectionVisual(false);
         if (curBuilding != null)
             curBuilding.ToggleSelectionVisual(false);
+        if (curResource != null)
+            curResource.ToggleSelectionVisual(false);
     }
 
     private void ClearEverything()
