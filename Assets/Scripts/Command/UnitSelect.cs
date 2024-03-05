@@ -21,6 +21,9 @@ public class UnitSelect : MonoBehaviour
 
     public static UnitSelect instance;
 
+    [SerializeField]
+    private ResourceSource curResource; //current selected resource
+
     private void SelectUnit(RaycastHit hit)
     {
         curUnit = hit.collider.GetComponent<Unit>();
@@ -99,6 +102,22 @@ public class UnitSelect : MonoBehaviour
             //Debug.Log("my building");
             ShowBuilding(curBuilding);//Show building info
         }
+    }
+
+    private void ShowResource()
+    {
+        InfoManager.instance.ShowAllInfo(curResource);//Show resource info in Info Panel
+
+    }
+
+    private void ResourceSelect(RaycastHit hit)
+    {
+        curResource = hit.collider.GetComponent<ResourceSource>();
+        if (curResource == null)
+            return;
+
+        curResource.ToggleSelectionVisual(true);
+        ShowResource();//Show resource info
     }
 
     // Start is called before the first frame update
