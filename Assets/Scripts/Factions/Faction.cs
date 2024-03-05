@@ -42,6 +42,10 @@ public class Faction : MonoBehaviour
     [SerializeField] private Transform ghostBuildingParent;
     public Transform GhostBuildingParent { get { return ghostBuildingParent; } }
 
+    [SerializeField]
+    private Transform startPosition; //start position for Faction
+    public Transform StartPosition { get { return startPosition; } }
+
     public bool CheckBuildingCost(Building building)
     {
         if (food < building.StructureCost.food)
@@ -101,6 +105,16 @@ public class Faction : MonoBehaviour
     public bool IsMyBuilding(Building b)
     {
         return aliveBuildings.Contains(b);
+    }
+
+    public Vector3 GetHQSpawnPos()
+    {
+        foreach (Building b in aliveBuildings)
+        {
+            if (b.IsHQ)
+                return b.SpawnPoint.position;
+        }
+        return startPosition.position;
     }
 
     // Start is called before the first frame update

@@ -10,6 +10,10 @@ public enum UnitState
     Attack,
     MoveToBuild,
     buildProgress,
+    MoveToResource,
+    Gather,
+    DeliverToHQ,
+    StoreAtHQ,
     Die
 }
 
@@ -82,6 +86,12 @@ public class Unit : MonoBehaviour
     [SerializeField] private Builder builder;
     public Builder Builder { get { return builder; } }
 
+    [SerializeField] private bool isWorker;
+    public bool IsWorker { get { return isWorker; } set { isWorker = value; } }
+
+    [SerializeField] private Worker worker;
+    public Worker Worker { get { return worker; } }
+
     public void LookAt(Vector3 pos)
     {
         Vector3 dir = (pos - transform.position).normalized;
@@ -149,5 +159,7 @@ public class Unit : MonoBehaviour
 
         if (IsBuilder)
             builder = GetComponent<Builder>();
+        if (IsWorker)
+            worker = GetComponent<Worker>();
     }
 }
