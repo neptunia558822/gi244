@@ -29,6 +29,10 @@ public class UnitSelect : MonoBehaviour
     private Vector2 oldAnchoredPos;//Box old anchored position
     private Vector2 startPos;//point where mouse is down
 
+    [SerializeField]
+    private Unit curEnemy;
+
+
     private void SelectUnit(RaycastHit hit)
     {
         Unit unit = hit.collider.GetComponent<Unit>();
@@ -40,6 +44,12 @@ public class UnitSelect : MonoBehaviour
             curUnits.Add(unit);
             unit.ToggleSelectionVisual(true);
             ShowUnit(unit);
+        }
+        else
+        {
+            curEnemy = unit;
+            curEnemy.ToggleSelectionVisual(true);
+            ShowEnemyUnit(unit);
         }
     }
 
@@ -75,6 +85,8 @@ public class UnitSelect : MonoBehaviour
             curBuilding.ToggleSelectionVisual(false);
         if (curResource != null)
             curResource.ToggleSelectionVisual(false);
+        if (curEnemy != null)
+            curEnemy.ToggleSelectionVisual(false);
     }
 
     private void ClearEverything()
@@ -114,6 +126,10 @@ public class UnitSelect : MonoBehaviour
         {
             //Debug.Log("my building");
             ShowBuilding(curBuilding);//Show building info
+        }
+        else
+        {
+            ShowEnemyBuilding(curBuilding);
         }
     }
 
@@ -174,6 +190,16 @@ public class UnitSelect : MonoBehaviour
             }
         }
         selectionBox.sizeDelta = new Vector2(0, 0); //clear Selection Box's size;
+    }
+
+    private void ShowEnemyUnit(Unit u)
+    {
+        InfoManager.instance.ShowEnemyAllInfo(u);
+    }
+
+    private void ShowEnemyBuilding(Building b)
+    {
+        InfoManager.instance.ShowEnemyAllInfo(b);
     }
 
     // Start is called before the first frame update
