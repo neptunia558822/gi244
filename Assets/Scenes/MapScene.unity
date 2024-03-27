@@ -1740,6 +1740,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1144183934}
     - target: {fileID: 9221436638999843983, guid: e768e574519a6774086224d0f8e4fba1, type: 3}
+      propertyPath: isHosing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221436638999843983, guid: e768e574519a6774086224d0f8e4fba1, type: 3}
       propertyPath: isFunctional
       value: 1
       objectReference: {fileID: 0}
@@ -5732,6 +5736,8 @@ MonoBehaviour:
   ghostBuildingParent: {fileID: 0}
   startPosition: {fileID: 0}
   newResourceRange: 50
+  buildingPrefabs: []
+  unitPrefabs: []
 --- !u!1 &1156500025
 GameObject:
   m_ObjectHideFlags: 0
@@ -6490,11 +6496,11 @@ PrefabInstance:
       objectReference: {fileID: 1456999633}
     - target: {fileID: 329985037256525795, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
       propertyPath: isFunctional
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 329985037256525795, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
       propertyPath: unitPrefabs.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 329985037256525795, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
       propertyPath: unitPrefabs.Array.data[1]
@@ -6503,7 +6509,7 @@ PrefabInstance:
     - target: {fileID: 329985037256525795, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
       propertyPath: unitPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 132726, guid: 767a0581b9d544b4fb4503712fb830df, type: 3}
+      objectReference: {fileID: 192002, guid: 536563a9c50594847b2036d8dac8101e, type: 3}
     - target: {fileID: 1011606855042232189, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
       propertyPath: m_Name
       value: Headquarter
