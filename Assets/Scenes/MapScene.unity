@@ -8681,6 +8681,7 @@ MonoBehaviour:
   factions:
   - {fileID: 1456999633}
   - {fileID: 2043624543}
+  - {fileID: 1144183934}
 --- !u!114 &1730858145 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3896888379885134594, guid: 2d4c805ade7f879438126300ffac0df0, type: 3}
