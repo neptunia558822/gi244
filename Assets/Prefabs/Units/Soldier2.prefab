@@ -5794,7 +5794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fafe1732e7860d4ba4fb3408389111c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1
+  id: 2
   unitName: SoldierCuptun
   unitPic: {fileID: 21300000, guid: 227003c2820c93e41858bea60da1affd, type: 3}
   curHP: 100
@@ -5824,6 +5824,7 @@ MonoBehaviour:
   attackRate: 1
   lastAttackTime: 0
   defendRange: 30
+  curEnemyBuildingTarget: {fileID: 0}
 --- !u!114 &812028655485200947
 MonoBehaviour:
   m_ObjectHideFlags: 0

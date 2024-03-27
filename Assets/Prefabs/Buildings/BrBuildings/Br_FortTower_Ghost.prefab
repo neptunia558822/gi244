@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9158255213306130452}
   - component: {fileID: 4527037289084105}
   - component: {fileID: 4316137335525436657}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 33, y: 15, z: 33}
+  m_Size: {x: 33, y: 10, z: 33}
   m_Center: {x: 0, y: 5, z: 3.2}
 --- !u!114 &2618010566432409401
 MonoBehaviour:

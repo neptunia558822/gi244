@@ -8008,6 +8008,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 329985037256525795, guid: 911b60a705c117e41a94e9fe6e6ffad5, type: 3}
+      propertyPath: faction
+      value: 
+      objectReference: {fileID: 1456999633}
+    - target: {fileID: 329985037256525795, guid: 911b60a705c117e41a94e9fe6e6ffad5, type: 3}
+      propertyPath: structureName
+      value: Barrack
+      objectReference: {fileID: 0}
     - target: {fileID: 1011606855042232189, guid: 911b60a705c117e41a94e9fe6e6ffad5, type: 3}
       propertyPath: m_Name
       value: Barrack
@@ -10644,12 +10652,12 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 556542357}
+  - {fileID: 1704540915}
   - {fileID: 565044092}
   - {fileID: 236036699}
   - {fileID: 1963658183}
   - {fileID: 520788847}
   - {fileID: 662561091}
-  - {fileID: 1704540915}
   - {fileID: 1346391585}
   - {fileID: 248270409}
   - {fileID: 1567499479}

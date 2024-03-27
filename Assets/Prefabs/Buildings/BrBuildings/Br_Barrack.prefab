@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   structureName: Headquarter
-  structurePic: {fileID: 21300000, guid: 72a1d44585f57264e825de17881b57b4, type: 3}
+  structurePic: {fileID: 21300000, guid: 440a9fd966047bc4d859de17fcbc2e82, type: 3}
   curHP: 100
   maxHP: 100
   faction: {fileID: 0}
@@ -73,9 +73,9 @@ MonoBehaviour:
   curUnitWaitTime: 0
   isFunctional: 0
   isHQ: 0
-  intoTheGround: 5
   isHousing: 0
   isBarrack: 1
+  intoTheGround: 5
 --- !u!65 &1927352618558656225
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -247,6 +247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Fort_Room_02
       objectReference: {fileID: 0}
+    - target: {fileID: 148076, guid: 4ccb1c3bf907ef74b92d63c996c095f6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 467558, guid: 4ccb1c3bf907ef74b92d63c996c095f6, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -297,6 +301,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9220857609501500639}
     m_Modifications:
+    - target: {fileID: 107830, guid: c64710ec183cb53439b5bd642a6dfb1d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 406580, guid: c64710ec183cb53439b5bd642a6dfb1d, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -372,8 +380,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3068034117344625825, guid: 843845de97e7ae24a817285e411fd86b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2860761
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068034117344625825, guid: 843845de97e7ae24a817285e411fd86b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.58458
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068034117344625825, guid: 843845de97e7ae24a817285e411fd86b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2860761
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068034117344625825, guid: 843845de97e7ae24a817285e411fd86b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.00000019809
       objectReference: {fileID: 0}
     - target: {fileID: 3068034117344625825, guid: 843845de97e7ae24a817285e411fd86b, type: 3}
       propertyPath: m_LocalPosition.y

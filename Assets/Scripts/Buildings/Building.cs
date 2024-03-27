@@ -25,14 +25,14 @@ public class Building : Structure
     [SerializeField] private bool isHQ;
     public bool IsHQ { get { return isHQ; } }
 
-    [SerializeField] private float intoTheGround = 5f;
-    public float IntoTheGround {  get { return intoTheGround; } }
-
     [SerializeField] private bool isHousing;
     public bool IsHousing { get { return isHousing; } }
 
     [SerializeField] private bool isBarrack;
-    public bool IsBarrack {  get { return isBarrack; } }
+    public bool IsBarrack { get { return isBarrack; } }
+
+    [SerializeField] private float intoTheGround = 5f;
+    public float IntoTheGround {  get { return intoTheGround; } }
 
     private float timer = 0f; //Constructing timer
     public float Timer { get { return timer; } set { timer = value; } }
