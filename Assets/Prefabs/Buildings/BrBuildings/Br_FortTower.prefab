@@ -123,7 +123,7 @@ MonoBehaviour:
   isHQ: 0
   isHousing: 0
   isBarrack: 0
-  intoTheGround: 5
+  intoTheGround: 3
   unitLayerMask:
     serializedVersion: 2
     m_Bits: 0
