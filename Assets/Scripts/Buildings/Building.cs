@@ -12,7 +12,7 @@ public class Building : Structure
     [SerializeField] private GameObject[] unitPrefabs;
     public GameObject[] UnitPrefabs { get { return unitPrefabs; } }
 
-    [SerializeField] private List<Unit> recruitList = new List<Unit>();
+    private List<Unit> recruitList = new List<Unit>();
 
     [SerializeField] private float unitTimer = 0f;
     [SerializeField] private int curUnitProgress = 0;
