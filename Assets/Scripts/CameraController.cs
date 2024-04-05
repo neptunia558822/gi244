@@ -86,6 +86,11 @@ public class CameraController : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * moveSpeed);
     }
 
+    public void FocusOnPosition(Vector3 pos)
+    {
+        transform.position = pos;
+    }
+
     // Start is called before the first frame update
     void Awake()
     {
