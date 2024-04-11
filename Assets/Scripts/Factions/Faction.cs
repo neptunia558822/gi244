@@ -9,9 +9,11 @@ public enum Nation
     Pirates,
     France,
     Spain,
-    Portuguese,
+    Portugal,
+    Netherland,
     Dutch
 }
+
 public class Faction : MonoBehaviour
 {
     [SerializeField] private Nation nation;
@@ -239,6 +241,40 @@ public class Faction : MonoBehaviour
             return false;
 
         return true;
+    }
+
+    public Color GetNationColor()
+    {
+        Color col;
+
+        switch (nation)
+        {
+            case Nation.Neutral:
+                col = Color.white;
+                break;
+            case Nation.Britain:
+                col = Color.red;
+                break;
+            case Nation.Pirates:
+                col = Color.black;
+                break;
+            case Nation.France:
+                col = Color.blue;
+                break;
+            case Nation.Spain:
+                col = Color.yellow;
+                break;
+            case Nation.Portugal:
+                col = Color.green;
+                break;
+            case Nation.Netherland:
+                col = new Color32(255, 157, 0, 255);
+                break;
+            default:
+                col = Color.white;
+                break;
+        }
+        return col;
     }
 
     // Start is called before the first frame update

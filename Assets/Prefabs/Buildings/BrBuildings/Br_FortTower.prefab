@@ -65,6 +65,7 @@ GameObject:
   - component: {fileID: 8522774750375712333}
   - component: {fileID: 7956624422702260258}
   - component: {fileID: 4337541556871927273}
+  - component: {fileID: -8824871043593892011}
   m_Layer: 7
   m_Name: Br_FortTower
   m_TagString: Building
@@ -115,7 +116,6 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   rallyPoint: {fileID: 0}
   unitPrefabs: []
-  recruitList: []
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
@@ -196,6 +196,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 33, y: 10, z: 33}
   m_Center: {x: 0, y: 5, z: 3.2}
+--- !u!114 &-8824871043593892011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014070185634993561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28160de353505d4a88cbe839a6c9839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &44821916215827523
 PrefabInstance:
   m_ObjectHideFlags: 0

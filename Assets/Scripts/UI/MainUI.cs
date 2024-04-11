@@ -16,6 +16,10 @@ public class MainUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI stoneText;
 
     [SerializeField] private RectTransform selectionBox;
+
+    private Canvas canvas;
+    public Canvas Canvas {  get { return canvas; } }
+
     public RectTransform SelectionBox { get { return selectionBox; } }
 
     public static MainUI instance;
@@ -29,9 +33,22 @@ public class MainUI : MonoBehaviour
         stoneText.text = faction.Stone.ToString();
     }
 
-    void Awake()
+    public Vector3 ScalePosition(Vector3 pos)
     {
+        Vector3 newPos;
+
+        newPos = new Vector3(pos.x * canvas.transform.localScale.x
+                             , pos.y * canvas.transform.localScale.y
+                             , pos.z * canvas.transform.localScale.z);
+
+        return newPos;
+    }
+
+    void Awake()
+    {        
         instance = this;
+
+        canvas = GetComponent<Canvas>();
     }
 
     // Update is called once per frame

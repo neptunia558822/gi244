@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1927352618558656225}
   - component: {fileID: 1654442204125413409}
   - component: {fileID: 86828248048800444}
+  - component: {fileID: -6841208311591535409}
   m_Layer: 7
   m_Name: Fr_Headquarter
   m_TagString: Building
@@ -66,7 +67,6 @@ MonoBehaviour:
   rallyPoint: {fileID: 627116315345449341}
   unitPrefabs:
   - {fileID: 132726, guid: 767a0581b9d544b4fb4503712fb830df, type: 3}
-  recruitList: []
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
@@ -139,6 +139,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 5, z: 3.2}
   m_TimeToStationary: 0.5
+--- !u!114 &-6841208311591535409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011606855042232189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28160de353505d4a88cbe839a6c9839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3643069118792116959
 GameObject:
   m_ObjectHideFlags: 0

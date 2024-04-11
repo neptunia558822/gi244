@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1576724198067442704}
   - component: {fileID: 8055307496204133842}
   - component: {fileID: 9221436638999843983}
+  - component: {fileID: -6893236442277340603}
   m_Layer: 7
   m_Name: Br_House
   m_TagString: Building
@@ -127,15 +128,26 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   rallyPoint: {fileID: 0}
   unitPrefabs: []
-  recruitList: []
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
   isFunctional: 0
   isHQ: 0
-  intoTheGround: 5
   isHousing: 1
   isBarrack: 0
+  intoTheGround: 5
+--- !u!114 &-6893236442277340603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6026208772362125654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28160de353505d4a88cbe839a6c9839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8685372734636127451
 GameObject:
   m_ObjectHideFlags: 0

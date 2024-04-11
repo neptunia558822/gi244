@@ -41,7 +41,7 @@ public class Building : Structure
 
     public void ToCreateUnit(int i)
     {
-        Debug.Log(structureName + " creates " + i + ":" + unitPrefabs.Length);
+        //Debug.Log(structureName + " creates " + i + ":" + unitPrefabs.Length);
         if (unitPrefabs.Length == 0)
             return;
 
@@ -66,7 +66,7 @@ public class Building : Structure
         //Add unit into faction's recruit list
         recruitList.Add(unit);
 
-        Debug.Log("Adding" + i + "to Recruit List");
+        //Debug.Log("Adding" + i + "to Recruit List");
     }
 
     public void CreateUnitCompleted()
@@ -89,6 +89,8 @@ public class Building : Structure
 
         Debug.Log("Unit Recruited");
         //If it's me, update UI
+        /*Debug.Log(faction);
+        Debug.Log(GameManager.instance.MyFaction);*/
         if (faction == GameManager.instance.MyFaction)
             MainUI.instance.UpdateAllResource(faction);
     }
