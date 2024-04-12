@@ -5118,7 +5118,7 @@ MonoBehaviour:
   - {fileID: 1011606855042232189, guid: 26763ccdb2ced27409bf1c5c8d626fba, type: 3}
   unitPrefabs:
   - {fileID: 132726, guid: b851b4c7030914b4795bb1f318559abc, type: 3}
-  - {fileID: 0}
+  - {fileID: 3380124336373576546, guid: 2d4c805ade7f879438126300ffac0df0, type: 3}
 --- !u!114 &1153258930 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 329985037256525795, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
@@ -5464,7 +5464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6259398603178500582, guid: 654bef246329f8340b58e01052fcbbcb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -1.1518257
       objectReference: {fileID: 0}
     - target: {fileID: 6259398603178500582, guid: 654bef246329f8340b58e01052fcbbcb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8418,7 +8418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6259398603178500582, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9481735
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 6259398603178500582, guid: aadcdcc3b87f2db4395ebb58cf3b7a62, type: 3}
       propertyPath: m_LocalPosition.z
