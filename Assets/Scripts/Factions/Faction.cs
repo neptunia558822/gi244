@@ -10,8 +10,7 @@ public enum Nation
     France,
     Spain,
     Portugal,
-    Netherland,
-    Dutch
+    Netherland
 }
 
 public class Faction : MonoBehaviour
