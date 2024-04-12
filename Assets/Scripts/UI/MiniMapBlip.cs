@@ -44,7 +44,7 @@ public class MiniMapBlip : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        blip = Instantiate(MiniMap.instance.blipParent);
+        blip = Instantiate(MiniMap.instance.blipPrefab);
         blip.transform.SetParent(MiniMap.instance.blipParent.transform);
         SetColor();
     }
