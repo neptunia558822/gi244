@@ -47,7 +47,6 @@ public class MainUI : MonoBehaviour
     void Awake()
     {        
         instance = this;
-
         canvas = GetComponent<Canvas>();
     }
 
