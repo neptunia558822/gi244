@@ -9257,9 +9257,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1428228431022749150, guid: 196919aa3ca5c1044880ee3f841667a6, type: 3}
+      propertyPath: m_TagString
+      value: Resource
+      objectReference: {fileID: 0}
     - target: {fileID: 2198919246897290655, guid: 196919aa3ca5c1044880ee3f841667a6, type: 3}
       propertyPath: m_Name
       value: ResourceManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528181019818515847, guid: 196919aa3ca5c1044880ee3f841667a6, type: 3}
+      propertyPath: m_TagString
+      value: Resource
+      objectReference: {fileID: 0}
+    - target: {fileID: 3461411722465297751, guid: 196919aa3ca5c1044880ee3f841667a6, type: 3}
+      propertyPath: m_TagString
+      value: Resource
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159874595473559364, guid: 196919aa3ca5c1044880ee3f841667a6, type: 3}
+      propertyPath: m_TagString
+      value: Resource
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250202790971605983, guid: 196919aa3ca5c1044880ee3f841667a6, type: 3}
+      propertyPath: m_TagString
+      value: Resource
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619648226725436849, guid: 196919aa3ca5c1044880ee3f841667a6, type: 3}
+      propertyPath: m_TagString
+      value: Resource
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867379840092856339, guid: 196919aa3ca5c1044880ee3f841667a6, type: 3}
+      propertyPath: m_TagString
+      value: Resource
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
